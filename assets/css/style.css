@@ -1,0 +1,383 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Tinos;
+  src: url(../fonts/Tinos-Regular.ttf);
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #FF7400;
+  color: #fff;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+@media (max-width: 1025px) {
+  .container {
+    max-width: unset;
+    padding: 0 10;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 0 14px;
+  }
+}
+
+.main {
+  background: url(../img/HERO\ IMG.png) no-repeat center center/cover;
+  height: 100vh;
+}
+@media (max-width: 500px) {
+  .main {
+    height: unset;
+    padding-bottom: 305px;
+  }
+}
+@media (max-width: 863px) {
+  .main {
+    background: url(../img/HERO\ IMG.png) no-repeat;
+  }
+}
+.main-sub-title {
+  font-family: Tinos;
+  font-weight: 400;
+  color: #968b51;
+  font-size: 50px;
+}
+@media (max-width: 863px) {
+  .main-sub-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .main-sub-title {
+    font-size: 30px;
+  }
+}
+.main-title {
+  font-family: Tinos;
+  font-weight: 400;
+  color: #968b51;
+  font-size: 80px;
+  margin-bottom: 12px;
+}
+@media (max-width: 863px) {
+  .main-title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .main-title {
+    font-size: 40px;
+  }
+}
+.main-txt {
+  font-family: OpenSans;
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.main-txt::before, .main-txt::after {
+  content: " ";
+  display: block;
+  width: 61px;
+  height: 2px;
+  background-color: #fff;
+}
+@media (max-width: 500px) {
+  .main-txt::before, .main-txt::after {
+    display: none;
+  }
+}
+.main-block {
+  max-width: 485px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 863px) {
+  .main-block {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .main-block {
+    margin-top: 250px;
+  }
+}
+
+.header {
+  padding-top: 50px;
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 863px) {
+  .header-logo {
+    width: 100px;
+  }
+  .header-logo img {
+    width: 100%;
+  }
+}
+@media (max-width: 749px) {
+  .header-logo {
+    width: 55px;
+  }
+}
+@media (max-width: 749px) {
+  .header-logo {
+    width: 45px;
+  }
+}
+.header-burger {
+  display: none;
+}
+@media (max-width: 749px) {
+  .header-burger {
+    display: block;
+  }
+}
+.header-block {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 749px) {
+  .header-block {
+    display: none;
+  }
+}
+.header-menu {
+  display: flex;
+  gap: 23px;
+  margin-right: 36px;
+}
+@media (max-width: 863px) {
+  .header-menu {
+    margin-right: 25px;
+  }
+}
+.header-link {
+  font-family: OpenSans;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+.header-link:hover {
+  color: black;
+}
+@media (max-width: 863px) {
+  .header-link {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+.header-box {
+  display: flex;
+  align-items: center;
+}
+.header-cart {
+  border-right: 1px solid #fff;
+  padding: 17px 21px 17px 0;
+  margin-right: 34px;
+}
+@media (max-width: 863px) {
+  .header-cart {
+    margin-right: 25px;
+  }
+}
+.header-phone-link {
+  font-family: OpenSans;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+  gap: 8px;
+}
+.header-phone-link::before {
+  content: " ";
+  background: url(../img/phone.svg);
+  display: block;
+  width: 23px;
+  height: 23px;
+}
+@media (max-width: 863px) {
+  .header-phone-link {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+.header-phone-txt {
+  font-family: OpenSans;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  max-width: 155px;
+}
+@media (max-width: 863px) {
+  .header-btn {
+    text-align: center;
+  }
+}
+
+.history {
+  padding-bottom: 120px;
+}
+.history-card {
+  width: 349px;
+  height: 328px;
+  box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.1);
+  padding: 48px 40px 20px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+@media (max-width: 1025px) {
+  .history-card {
+    width: 320px;
+    height: 300px;
+    padding: 40px 20px 20px 20px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .history-card {
+    padding: 20px;
+    width: 100%;
+  }
+}
+.history-card-title {
+  color: #2c2c2c;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.history-card-title span {
+  color: #bc9060;
+}
+.history-card-txt {
+  color: #656363;
+}
+.history-card-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: -110px;
+}
+@media (max-width: 769px) {
+  .history-card-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.history .section-title {
+  font-size: 54px;
+}
+.history .section-title span {
+  color: #D67E34;
+}
+.history-text-part {
+  text-align: center;
+}
+.history-bottom-block {
+  display: flex;
+  align-items: center;
+  margin-top: 130px;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .history-bottom-block {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+.history-txt {
+  width: 444px;
+  color: #bc9060;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .history-txt {
+    width: auto;
+  }
+}
+.history-food-counts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 400px) {
+  .history-food-counts {
+    flex-direction: column;
+  }
+}
+.history-food-count {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+.history-food-count span {
+  color: #D67E34;
+  font-size: 40px;
+}
+.history-img-part img {
+  width: 100%;
+}
+
+.section-title {
+  font-size: 54px;
+}
+.section-title span {
+  color: #D67E34;
+}
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 46px;
+  }
+}
+@media (max-width: 400px) {
+  .section-title {
+    font-size: 40px;
+  }
+}
