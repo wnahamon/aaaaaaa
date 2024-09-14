@@ -381,3 +381,141 @@ li {
     font-size: 40px;
   }
 }
+
+.best_restaurant {
+  background: url("../img/bg.png") no-repeat center center/cover;
+}
+@media (max-width: 320px) {
+  .best_restaurant {
+    height: unset;
+    width: unset;
+  }
+}
+.best_restaurant-main-block-txt {
+  color: #D67E34;
+  font-size: 52px;
+  height: 120px;
+  width: 601px;
+}
+.best_restaurant-second-block-txt {
+  font-size: 24px;
+  color: #fff;
+}
+
+.cook-title {
+  display: flex;
+  justify-content: center;
+  font-size: 54px;
+  padding-top: 136px;
+}
+.cook-title span {
+  color: #D67E34;
+}
+.cook-photo {
+  padding-top: 107px;
+  padding-bottom: 194px;
+  gap: 30px;
+}
+@media (max-width: 1053px) {
+  .cook-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 320px) {
+  .cook-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .cook-photo {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 701px) {
+  .cook-photo {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.menu {
+  background: url("../img/menu-bar.png") no-repeat center center/cover;
+}
+@media (max-width: 1602px) {
+  .menu {
+    background: url("../img/menu-bar.png") no-repeat;
+  }
+}
+@media (max-width: 1602px) and (max-width: 1456px) {
+  .menu {
+    background: url("../img/menu-bar.png") no-repeat;
+  }
+}
+@media (max-width: 1602px) and (max-width: 1590px) {
+  .menu {
+    background: url("../img/menu-bar.png") no-repeat;
+  }
+}
+@media (max-width: 1602px) {
+  .menu-title {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 54px;
+    padding-top: 100px;
+  }
+  .menu-card1 {
+    background-color: #fff;
+    width: 350px;
+    height: 510px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 1602px) and (max-width: 1600px) {
+  .menu-card1 {
+    padding: 20px;
+  }
+}
+@media (max-width: 1602px) {
+  .menu-card {
+    display: flex;
+    padding-bottom: 226px;
+  }
+}
+@media (max-width: 1602px) and (max-width: 1600px) {
+  .menu-card {
+    flex-direction: column;
+    margin-bottom: 100px;
+    align-items: center;
+  }
+}
+@media (max-width: 1602px) {
+  .menu-card-txt {
+    text-align: center;
+  }
+  .menu-card-btn {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .menu-card-title {
+    padding-top: 22px;
+    font-size: 26px;
+  }
+  .menu-card-second {
+    font-size: 16px;
+    padding-top: 17px;
+  }
+  .menu-img {
+    display: flex;
+    justify-content: center;
+    min-height: 225px;
+    min-width: 225px;
+    padding-top: 80px;
+  }
+}
