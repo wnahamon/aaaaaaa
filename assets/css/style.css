@@ -446,76 +446,47 @@ li {
 .menu {
   background: url("../img/menu-bar.png") no-repeat center center/cover;
 }
-@media (max-width: 1602px) {
-  .menu {
-    background: url("../img/menu-bar.png") no-repeat;
-  }
+.menu-title {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 54px;
+  padding-top: 100px;
 }
-@media (max-width: 1602px) and (max-width: 1456px) {
-  .menu {
-    background: url("../img/menu-bar.png") no-repeat;
-  }
+.menu-card1 {
+  background-color: #fff;
+  max-width: 350px;
+  min-height: 510px;
+  gap: 5px;
 }
-@media (max-width: 1602px) and (max-width: 1590px) {
-  .menu {
-    background: url("../img/menu-bar.png") no-repeat;
-  }
+.menu-card {
+  padding-bottom: 226px;
+  display: flex;
+  justify-content: space-between;
 }
-@media (max-width: 1602px) {
-  .menu-title {
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    font-size: 54px;
-    padding-top: 100px;
-  }
-  .menu-card1 {
-    background-color: #fff;
-    width: 350px;
-    height: 510px;
-    margin-left: 30px;
-  }
+.menu-card-txt {
+  text-align: center;
 }
-@media (max-width: 1602px) and (max-width: 1600px) {
-  .menu-card1 {
-    padding: 20px;
-  }
+.menu-card-btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
 }
-@media (max-width: 1602px) {
-  .menu-card {
-    display: flex;
-    padding-bottom: 226px;
-  }
+.menu-card-title {
+  padding-top: 22px;
+  font-size: 26px;
 }
-@media (max-width: 1602px) and (max-width: 1600px) {
-  .menu-card {
-    flex-direction: column;
-    margin-bottom: 100px;
-    align-items: center;
-  }
+.menu-card-second {
+  font-size: 16px;
+  padding-top: 17px;
 }
-@media (max-width: 1602px) {
-  .menu-card-txt {
-    text-align: center;
-  }
-  .menu-card-btn {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .menu-card-title {
-    padding-top: 22px;
-    font-size: 26px;
-  }
-  .menu-card-second {
-    font-size: 16px;
-    padding-top: 17px;
-  }
-  .menu-img {
-    display: flex;
-    justify-content: center;
-    min-height: 225px;
-    min-width: 225px;
-    padding-top: 80px;
-  }
+.menu-img {
+  padding-left: 62px;
+  padding-right: 63px;
+  display: flex;
+  justify-content: center;
+  min-height: 225px;
+  min-width: 225px;
+  padding-top: 80px;
 }

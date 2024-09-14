@@ -398,14 +398,6 @@ li{
 
 .menu{
     background: url("../img/menu-bar.png") no-repeat center center/cover;
-    @media (max-width:1602px){
-        background: url("../img/menu-bar.png") no-repeat;
-    @media (max-width:1456px){
-        background: url("../img/menu-bar.png") no-repeat;
-    }
-    @media (max-width:1590px){
-        background: url("../img/menu-bar.png") no-repeat;
-    }
     &-title{
         display: flex;
         justify-content: center;
@@ -415,23 +407,17 @@ li{
     }
     &-card1{
         background-color: #fff;
-        width: 350px;
-        height: 510px;
-        margin-left: 30px;
-        @media (max-width:1600px){
-            padding: 20px;
-            
-        }
+        max-width: 350px;
+        min-height: 510px;
+        gap: 5px;
+        
+
         
     }
     &-card{
-        display: flex;
         padding-bottom: 226px;
-        @media (max-width:1600px){
-            flex-direction: column;
-            margin-bottom: 100px;
-            align-items: center;
-        }
+        display: flex;
+        justify-content: space-between;
         &-txt{
             text-align: center;
         }
@@ -439,6 +425,7 @@ li{
             display: block;
             margin: 0 auto;
             text-align: center;
+            padding-top : 20px;
         }
         &-title{
             padding-top: 22px;
@@ -450,12 +437,12 @@ li{
         }
     }
     &-img{
+        padding-left: 62px;
+        padding-right: 63px;
         display: flex;
         justify-content: center;
         min-height: 225px;
         min-width: 225px;
         padding-top: 80px;
     }
-
-}
 }
